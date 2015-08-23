@@ -1,0 +1,10 @@
+" Unimpaired mappings
+nmap [e <Plug>unimpairedMoveUp==
+nmap ]e <Plug>unimpairedMoveDown==
+xmap [e <Plug>unimpairedMoveSelectionUp==
+xmap ]e <Plug>unimpairedMoveSelectionDown==
+
+if !has('gui_running')
+    map <ScrollWheelUp> <C-Y>
+    map <ScrollWheelDown> <C-E>
+endif

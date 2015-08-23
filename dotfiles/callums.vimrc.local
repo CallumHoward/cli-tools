@@ -1,0 +1,128 @@
+inoremap kj <Esc>
+
+" Color Preferences
+color gotham
+hi Normal ctermbg=none guibg=#030611
+hi ErrorMsg ctermbg=none
+hi LineNr ctermbg=0
+hi VertSplit ctermbg=10 ctermfg=10 guibg=#0A1721 guifg=#0A1721
+hi SignColumn ctermbg=10 guibg=#0A1721
+let indent_guides_auto_colors = 0
+hi IndentGuidesOdd ctermbg=239 ctermfg=242 guibg=#0A1721 guifg=#0A1721
+hi IndentGuidesEven ctermbg=242 ctermfg=239 guibg=#0A1721 guifg=#0A1721
+
+let g:vawahl="ctermbg=black ctermfg=white guifg=#ffffff guibg=#000000 gui=bold cterm=underline"
+
+" verticle split is just bg color
+set fillchars=
+
+" Airline Customization
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+source ~/.vim/bundle/vim-gotham/autoload/airline/themes/gotham.vim
+let g:airline_theme = 'gotham'
+
+" Set Title
+autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
+
+" Smooth Scroll Customization
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 2, 4)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 2, 4)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 2, 8)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 2, 8)<CR>
+
+" Incsearch Mappings
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
+" Ack plugin options
+let g:ack_default_options = " --smart-case --column --follow"
+command -nargs=* Ag Ack <args>
+let g:ackhighlight = 1
+let g:ack_autoclose = 1
+let g:ack_use_dispatch = 1
+
+let g:spf13_bundle_groups=['youcompleteme']
+
+" Easymotion plugin options
+map <Space> <Plug>(easymotion-prefix)
+let g:EasyMotion_startofline = 0
+let g:EasyMotion_keys = 'asdfghjklweruiovn'
+hi link EasyMotionTarget2First EasyMotionTarget
+
+" File browser configuration
+function! Ranger()
+    " Get a temp file name without creating it
+    let tmpfile = substitute(system('mktemp -u -t ranger'), '\n', '', '')
+    " Launch ranger, passing it the temp file name
+    silent exec '!RANGER_RETURN_FILE='.tmpfile.' ranger'
+    " If the temp file has been written by ranger
+    if filereadable(tmpfile)
+        " Get the selected file name from the temp file
+        let filetoedit = system('cat '.tmpfile)
+        exec 'edit '.filetoedit
+        call delete(tmpfile)
+    endif
+    redraw!
+endfunction
+
+unmap <leader>ew
+unmap <leader>es
+unmap <leader>ev
+unmap <leader>et
+nmap <silent> <leader>ee :NERDTreeToggle<CR>
+nmap <silent> <leader>t :TagbarOpen fj<CR>
+nmap <leader>f :call Ranger()<CR>
+nmap <leader>m :Make<CR>
+
+" allow location list mappings for jumping between errors to work all the time
+let g:syntastic_always_populate_loc_list = 1
+
+" Hard Time plugin configuration
+"let g:hardtime_default_on = 1
+let g:hardtime_showmsg = 1
+let g:hardtime_allow_different_key = 1
+
+" Evervim configuration
+let g:evervim_devtoken="S=s37:U=3c729d:E=15337b47149:C=14be0034288:P=1cd:A=en-devtoken:V=2:H=dc0afcef36af8fff11e9910cb19157d8"
+
+" vim-GeekNote configuration
+nnoremap <Leader>g :Geeknote<CR>
+
+set nospell
+set foldmethod=syntax
+set foldnestmax=1
+
+" color coded plugin
+let g:color_coded_enabled = 0
+
+" React config
+"let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+"let g:syntastic_javascript_checkers = ['eslint']
+
+" Syntastic config
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+" Only enable the quick-scope plugin's highlighting when using the f/F/t/T
+let g:qs_enable = 0
+let g:qs_enable_char_list = [ 'f', 'F', 't', 'T' ]
+
+function! Quick_scope_selective(movement)
+    let needs_disabling = 0
+    if !g:qs_enable
+        QuickScopeToggle
+        redraw
+        let needs_disabling = 1
+    endif
+    let letter = nr2char(getchar())
+    if needs_disabling
+        QuickScopeToggle
+    endif
+    return a:movement . letter
+endfunction
+
+for i in g:qs_enable_char_list
+    execute 'noremap <expr> <silent>' . i . " Quick_scope_selective('". i . "')"
+endfor

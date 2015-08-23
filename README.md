@@ -1,5 +1,5 @@
 # Command Line Tools
-*Resources for Customisation and Productivity*
+*Curated Resources for Customisation and Productivity*
 
 ## Package Manager
 - [Homebrew](http://brew.sh) 
@@ -22,20 +22,20 @@
 - [Fish](http://fishshell.com) 🍺
 - [Hotkeys](http://cupfullofcode.com/blog/2013/07/03/efficient-command-line-navigation/index.html)
   - [Readline](http://readline.kablamo.org/emacs.html) (Emacs)
-  - Vi(m)
+  - [Vi(m)](http://dougblack.io/words/zsh-vi-mode.html)
 
 ## Terminal Emulator
 - Emulators
-  - OSX Terminal
+  - OSX Terminal 
   - [iTerm2](http://iterm2.com) 
   - Terminator
   - Gnome Terminal
-  - [cmder](http://gooseberrycreative.com/cmder/)
+  - [cmder](http://gooseberrycreative.com/cmder/) ⊞
 - Themes
   - [Base16](https://github.com/chriskempson/base16)
   - [Gotham](https://github.com/whatyouhide/gotham-contrib)
   - [iTerm Colors](https://github.com/bahlo/iterm-colors) collection
-- Fonts
+- [Fonts](http://wesbos.com/programming-fonts/)
   - [Inconsolata](https://github.com/Determinant/inconsolata_for_powerline_mod) (Tmux & Powerline mod version)
 - Mouse
   - [MouseTerm plus](https://github.com/saitoha/mouseterm-plus) mouse support for Tmux in OSX Terminal
@@ -50,8 +50,9 @@
   - git command aliases
 
 ## File Manager
-- Ranger 🍺
-  - ranger-cd
+- [Ranger](http://ranger.nongnu.org) 🍺
+  - [ranger-cd](https://gist.github.com/dbohdan/6257642)
+  - ra `alias ra="ranger"` (add to `.zshrc`)
   - mkcd: `mkcd() { mkdir -p "$@" && cd "$@"; }` (add to `.zshrc`)
 
 ## Remote Computing
@@ -67,17 +68,23 @@
 - [LLDB](http://lldb.llvm.org/lldb-gdb.html) GDB for OSX 
 
 ## Search (grep)
-- Ag 🍺
+- [Ag the Silver Searcher](https://github.com/ggreer/the_silver_searcher) 🍺
 
 ## Text Editor
 - [Vim](https://youtu.be/5FDtnnTt_zg) 🍺
+  - [spf13-vim](http://vim.spf13.com)
+  - [vim-cheatsheet]()
 - [Emacs](https://cl.ly/azzO/download/talk-summary.pdf) 🍺
-- Nano
+  - [spacemacs](https://github.com/syl20bnr/spacemacs/)
+- [Nano](http://readline.kablamo.org/emacs.html)
 
 ## Python [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop)
-- Ptpython 🍺
-- iPython Notebook 🍺
-- ByPython 🍺
+- [Ptpython](https://github.com/jonathanslenders/ptpython/) (includes ptipython)
+- [iPython](http://ipython.org) 🍺
+- [ByPython](http://bpython-interpreter.org) 🍺
+- 
+## Web Browser
+- [w3m](http://www.howtogeek.com/103574/how-to-browse-from-the-linux-terminal-with-w3m/) 🍺
 
 ## Misc CLI tricks
 - ssh alias
@@ -94,4 +101,5 @@
 
 ###### Key
 🍺  Available through Homebrew  
-   Available on Mac OSX
+   Available on Mac OSX only 
+⊞   Available on Windows only

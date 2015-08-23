@@ -104,5 +104,5 @@
 
 ###### Key
 🍺  Available through Homebrew  
-   Available on Mac OSX only 
+   Available on Mac OSX only  
 ⊞   Available on Windows only

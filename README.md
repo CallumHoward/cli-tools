@@ -1,5 +1,5 @@
-# Command line tools
-*resources for customisation and productivity*
+# Command Line Tools
+*Resources for Customisation and Productivity*
 
 ## Package Manager
 - [Brew](http://brew.sh) 
@@ -70,5 +70,6 @@
 - Xargs/GNU Parallel
 
 
-🍺  Available through Brew
+###### Key
+🍺  Available through Brew  
    Available on Mac OSX

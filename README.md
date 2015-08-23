@@ -47,13 +47,13 @@
 - [Git](https://help.github.com/articles/generating-ssh-keys/) 🍺
   - [Pretty git log](https://coderwall.com/p/euwpig/a-better-git-log)
   - simple git status: `git config --global sb 'status -sb'`
-  - git command aliases
+  - [git command aliases](https://github.com/CallumHoward/cli-tools/blob/master/dotfiles/callums.zshrc#L230)
 
 ## File Manager
 - [Ranger](http://ranger.nongnu.org) 🍺
   - [ranger-cd](https://gist.github.com/dbohdan/6257642)
-  - ra `alias ra="ranger"` (add to `.zshrc`)
-  - mkcd: `mkcd() { mkdir -p "$@" && cd "$@"; }` (add to `.zshrc`)
+  - [ra](https://github.com/CallumHoward/cli-tools/blob/master/dotfiles/callums.zshrc#L222) `alias ra="ranger"` (add to `.zshrc`)
+  - [mkcd](https://github.com/CallumHoward/cli-tools/blob/master/dotfiles/callums.zshrc#L208): `mkcd() { mkdir -p "$@" && cd "$@"; }` (add to `.zshrc`)
 
 ## Remote Computing
 - SSH
@@ -73,7 +73,7 @@
 ## Text Editor
 - [Vim](https://youtu.be/5FDtnnTt_zg) 🍺
   - [spf13-vim](http://vim.spf13.com)
-  - [vim-cheatsheet]()
+  - [vim-cheatsheet](https://github.com/CallumHoward/cli-tools/blob/master/vimcheatsheet.pdf)
 - [Emacs](https://cl.ly/azzO/download/talk-summary.pdf) 🍺
   - [spacemacs](https://github.com/syl20bnr/spacemacs/)
 - [Nano](http://readline.kablamo.org/emacs.html)
@@ -82,7 +82,10 @@
 - [Ptpython](https://github.com/jonathanslenders/ptpython/) (includes ptipython)
 - [iPython](http://ipython.org) 🍺
 - [ByPython](http://bpython-interpreter.org) 🍺
-- 
+
+## System Monitor
+- [htop](https://github.com/CallumHoward/cli-tools/blob/master/dotfiles/callums.zshrc#L226) 🍺
+
 ## Web Browser
 - [w3m](http://www.howtogeek.com/103574/how-to-browse-from-the-linux-terminal-with-w3m/) 🍺
 

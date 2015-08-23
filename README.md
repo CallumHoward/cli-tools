@@ -13,10 +13,10 @@
   - [Dim inactive windows](https://github.com/blueyed/vim-diminactive)
 
 ## Shell
-- Zsh 🍺
+- [Zsh](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/) 🍺
   - [Oh My Zsh](http://ohmyz.sh)
   - [newline after prompt](https://github.com/robbyrussell/oh-my-zsh/wiki/themes#ys)
-  - completion of filenames, command flags, history, git commands, ls in colour
+  - completion of filenames, command flags, history, git/kill commands
   - [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) (Fish style)
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) (Fish style)
 - [Fish](http://fishshell.com) 🍺

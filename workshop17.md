@@ -29,15 +29,15 @@ ls -la | grep '^lrw' | perl -pne 's/\s+(?=[^\n])/,/g' | cut -f 9 -d, | grep '^\.
 
 
 ## Bash
-config file: `.bashrc`
-[readline](http://readline.kablamo.org/emacs.html) (and macOS support)
-`!!`
-Meta-. Meta-[1-9]
-Ctrl-r Ctrl-s  `[[ $- == *i* ]] && stty -ixon ` —> .bashrc
-[hstr](https://github.com/dvorka/hstr)
-Ctrl-z suspend, `fg` resume
-`cd -`
-Ctrl-L > `clear`
+config file: `.bashrc`  
+[readline](http://readline.kablamo.org/emacs.html) (and macOS support)  
+`!!`  
+Meta-. Meta-[1-9]  
+Ctrl-r Ctrl-s  `[[ $- == *i* ]] && stty -ixon ` —> .bashrc  
+[hstr](https://github.com/dvorka/hstr)  
+Ctrl-z suspend, `fg` resume  
+`cd -`  
+Ctrl-L > `clear`  
 
 
 ## Zsh
@@ -76,15 +76,15 @@ config file: `.zshrc`
 
 
 ## Misc
-`sed` —> `perl -pne`
+`sed` —> `perl -pne`  
 `xargs`
 
 
 ## Tmux
-Sessions, windows, panes
-Prefix
-`.tmux.conf`
-last command (Prefix-b)
+Sessions, windows, panes  
+Prefix  
+`.tmux.conf`  
+last command (Prefix-b)  
 
 
 ## Terminal Emulators

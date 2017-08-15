@@ -15,11 +15,11 @@ First we will make sure it exists, and then change to that directory.
 ```shell
 ssh-keygen -f ~/.ssh/cse_id_rsa -t rsa -b 4096 -C “z5555555@cse.unsw.edu.au”
 ```
-`cse_id_rsa` will hold the private key, keep it secret, keep it safe.
-`cse_id_rsa.pub` will hold the public key. It is okay for anyone to know.
-The `-f` flag specifies an identity file to save the key in.
-The `-t` flag specifies the type of encryption, and `-b` sets the number of bits in the key.
-`-C` is a comment, typically an email to keep track if you have multiple keys.
+`cse_id_rsa` will hold the private key, keep it secret, keep it safe.  
+`cse_id_rsa.pub` will hold the public key. It is okay for anyone to know.  
+The `-f` flag specifies an identity file to save the key in.  
+The `-t` flag specifies the type of encryption, and `-b` sets the number of bits in the key.  
+`-C` is a comment, typically an email to keep track if you have multiple keys.  
 
 ### 3. Copy public key to the host
 ```shell
@@ -53,7 +53,7 @@ Host cse
 This sets `cse` as the alias for this profile, which means you can start an SSH session with `ssh cse`. If you see a message like "The authenticity of host can't be established", that is normal and you can type `yes` to continue.
 
 ### X-Forwarding and Compression
-You can optionally add these as well. `ForwardX11Trusted` is equivalent to passing `-Y`, and allows some graphical programs [to be used](https://www.seas.upenn.edu/cets/answers/x11-forwarding.html) over SSH.
+You can optionally add these as well. `ForwardX11Trusted` is equivalent to passing `-Y`, and allows some graphical programs [to be used](https://www.seas.upenn.edu/cets/answers/x11-forwarding.html) over SSH.  
 Compression and the alternate ciphers can give better [latency and performance](http://xmodulo.com/how-to-speed-up-x11-forwarding-in-ssh.html).
 ```shell
     ForwardX11Trusted yes
@@ -67,10 +67,10 @@ Compression and the alternate ciphers can give better [latency and performance](
 ```
 
 ### For macOS users
-Add the following if you are on macOS Sierra 10.12.2 or later.
-If you add other hosts in the future, add their `IdentityFile` at the bottom.
-After doing this you shouldn't need to enter a password when connecting.
-More details [here](https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain).
+Add the following if you are on macOS Sierra 10.12.2 or later.  
+If you add other hosts in the future, add their `IdentityFile` at the bottom.  
+After doing this you shouldn't need to enter a password when connecting.  
+More details [here](https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain).  
 ```shell
 Host *
     AddKeysToAgent yes
@@ -82,6 +82,6 @@ Host *
 
 
 ## Squelch login message
-To silence login message:
+To silence login message:  
 1. Start SSH connection with host (`ssh cse`)
 3. Run `touch ~/.hushlogin`

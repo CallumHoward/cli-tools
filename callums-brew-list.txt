@@ -78,7 +78,6 @@ python3
 qt
 qt5
 r
-ragel
 ranger
 readline
 reattach-to-user-namespace

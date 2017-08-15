@@ -1,7 +1,9 @@
 # Command Line Tools
 *Curated Resources for Customisation and Productivity*
 
-## Quick L
+## Quick Links
+### [CSESoc Workshop 2017!](https://github.com/CallumHoward/cli-tools/blob/master/workshop17.md)
+### [SSH Guide](https://github.com/CallumHoward/cli-tools/blob/master/ssh_guide.md)
 
 ## Package Manager
 - [Homebrew](http://brew.sh) 

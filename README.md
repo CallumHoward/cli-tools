@@ -4,6 +4,7 @@
 ## Quick Links
 ### [CSESoc Workshop 2017!](https://github.com/CallumHoward/cli-tools/blob/master/workshop17.md)
 ### [SSH Guide](https://github.com/CallumHoward/cli-tools/blob/master/ssh_guide.md)
+### [Callum's Dotfiles](https://github.com/CallumHoward/dotfiles/)
 
 ## Package Manager
 - [Homebrew](http://brew.sh) 
@@ -65,7 +66,7 @@
 - [Git](https://help.github.com/articles/generating-ssh-keys/) 🍺
   - [Pretty git log](https://coderwall.com/p/euwpig/a-better-git-log)
   - simple git status: `git config --global sb 'status -sb'`
-  - [git command aliases](https://github.com/CallumHoward/cli-tools/blob/master/dotfiles/callums.zshrc#L230)
+  - [git command aliases](https://github.com/CallumHoward/dotfiles/blob/master/.shell_aliases#L53-L62)
 
 
 ## File Manager

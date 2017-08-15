@@ -23,7 +23,7 @@ The `-t` flag specifies the type of encryption, and `-b` sets the number of bits
 
 ### 3. Copy public key to the host
 ```shell
-ssh-copy-id -i cse_id_rsa.pub z5555555@cse.unsw.edu.au
+ssh-copy-id -i ~/.ssh/cse_id_rsa.pub z5555555@cse.unsw.edu.au
 ```
 This will add your public key to `~/.ssh/authorized_keys` on the host (the CSE server).
 

@@ -1,4 +1,0 @@
-Host cse
-User callumh
-HostName wagner.cse.unsw.edu.au
-IdentityFile ~/.ssh/id_rsa

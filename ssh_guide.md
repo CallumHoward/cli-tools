@@ -52,14 +52,14 @@ Host cse
 ```
 This sets `cse` as the alias for this profile, which means you can start an SSH session with `ssh cse`. If you see a message like "The authenticity of host can't be established", that is normal and you can type `yes` to continue.
 
-### X-Forwarding and Compression
+### X-Forwarding and Compression (Optional)
 You can optionally add these as well. `ForwardX11Trusted` is equivalent to passing `-Y`, and allows some graphical programs [to be used](https://www.seas.upenn.edu/cets/answers/x11-forwarding.html) over SSH.  
-Compression and the alternate ciphers can give better [latency and performance](http://xmodulo.com/how-to-speed-up-x11-forwarding-in-ssh.html).
+Compression and the alternate ciphers can give better [latency and performance](http://xmodulo.com/how-to-speed-up-x11-forwarding-in-ssh.html). The `XAuthLocation` is only needed on macOS to allow the X11 forwarding to work without errors.
 ```shell
     ForwardX11Trusted yes
     ForwardAgent yes
     ForwardX11 yes
-    XAuthLocation /opt/X11/bin/xauth  # macOS only
+    XAuthLocation /opt/X11/bin/xauth
     Compression yes
     CompressionLevel 4
     Ciphers arcfour128,blowfish-cbc

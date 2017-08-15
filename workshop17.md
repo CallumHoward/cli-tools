@@ -1,9 +1,9 @@
 # CSESoc Commandline Tools Workshop 2017
 
 ## Git
-aliases in `.gitconfig`
-[Hub](https://hub.github.com)
-[Use ssh keys for authentication](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+aliases in `.gitconfig` 
+[Hub](https://hub.github.com)  
+[Use ssh keys for authentication](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)  
 
 ```shell
 ls -la | grep '^lrw' | perl -pne 's/\s+(?=[^\n])/,/g' | cut -f 9 -d, | grep '^\.'

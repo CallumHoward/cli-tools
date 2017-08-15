@@ -117,10 +117,10 @@ last command (Prefix-b)
 
 
 ## Rust Utils
-[ripgrep](https://github.com/BurntSushi/ripgrep)
-[skim](https://github.com/lotabout/skim)
-[exa](https://the.exa.website)
-[walker](https://github.com/CallumHoward/walker)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [skim](https://github.com/lotabout/skim)
+- [exa](https://the.exa.website)
+- [walker](https://github.com/CallumHoward/walker)
 
 
 ## Python

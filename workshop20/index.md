@@ -4,11 +4,11 @@
 
 ![homebrew-screenshot](package_manager/brew.jpg)
 
-## Terminal Emulator
+## [Terminal Emulator](terminal_emulator/terminal_emulator.md)
 
 ![macos-terminal-screenshot](terminal.jpg)
 
-## Shell
+## [Shell](shell/shell.md)
 
 ![zsh-screenshot](zsh.jpg)
 
@@ -16,26 +16,34 @@
 
 ![git-screenshot](git/s.jpg)
 
-## Terminal Multiplexer
+## [Terminal Multiplexer](terminal_multiplexer/terminal_multiplexer.md)
 
 ![tmux-screenshot](tmux.jpg)
 
-## Remote Computing
+## [Remote Computing](https://github.com/CallumHoward/cli-tools/blob/master/ssh_guide.md)
 
-## File Manager
+![ssh-screenshot](ssh.jpg)
+
+## [File Browser](file_browser/file_browser.md)
 
 ![ranger-screenshot](ranger.jpg)
 
-## Search
+## [Search](search/search.md)
 
 ![ripgrep-screenshot](ripgrep.jpg)
 
-## Text Editor
+## [Text Editor](text_editor/text_editor.md)
 
 ![vim-screenshot](vim.jpg)
 
-## REPL
+## [REPL](repl/repl.md)
 
-## Debugger
+![bpython-screenshot](bpython.jpg)
 
-## Browser
+## [Debugger](debugger/debugger.md)
+
+![pdbpp-screenshot](pdbpp.jpg)
+
+## [Browser](browser/browser.md)
+
+![browsh-screenshot](browsh.jpg)

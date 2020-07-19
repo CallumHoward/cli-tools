@@ -282,6 +282,11 @@ Here are some git aliases that I find useful.
 
 > Note that aliases are only useful if you remember them, and it is hard to memorise all of these. Consider taking a couple that you think will be most useful and come back for more when you have those memorised. It can also sometimes be useful to memorise the underlying command if you find yourself working on a machine without your config setup.
 
+---
+
+<Details>
+<Summary>Details</Summary>
+
 ```sh
 alias g="git"
 alias gca="git commit --amend"  # In case you forgot to add something to your last commit
@@ -313,9 +318,18 @@ alias gmm="git merge master"
 alias pop="git stash pop -q && s"
 ```
 
+</Details>
+
+---
+
 #### Zsh Functions
 
 For Zsh I also have some shell functions for Git operations. I have made these functions mainly so I can trigger the Git status `s` alias after each operation. It will only do a git status if it would fit on the screen. They could probably be adapted to Bash without too much modification.
+
+---
+
+<Details>
+<Summary>Details</Summary>
 
 ```sh
 
@@ -391,11 +405,20 @@ function clo() {
 }
 ```
 
+</Details>
+
+---
+
 #### Zsh Aliases
 
 Zsh supports some special aliases that can be useful for working with Git.
 
 ##### Zsh Suffix Aliases
+
+---
+
+<Details>
+<Summary>Details</Summary>
 
 Suffix aliases allow a command to be run if a file with a suffix is given. When cloning a Git repo, the URL usually ends with `.git`. Therefore we can tell Zsh when it sees a plain Git URL ending in `.git` with no command, use the `clo` function defined above.
 
@@ -403,7 +426,16 @@ Suffix aliases allow a command to be run if a file with a suffix is given. When 
 alias -s git="clo"
 ```
 
+</Details>
+
+---
+
 ##### Zsh Global Aliases
+
+---
+
+<Details>
+<Summary>Details</Summary>
 
 With Zsh's global aliases, we can evaluate commands to insert into a commandline. The following command and FZF can be used to select a branch. It can be used like `co BF`, which will allow you to select a branch interactively with FZF.
 
@@ -434,6 +466,10 @@ alias -g GM='`sb . | tail -n +2 | egrep "^\s[MD]" | cut -c 4- | tr "\n" " "`'
 alias -g GU='`sb . | tail -n +2 | egrep "^\s?U" | cut -c 4- | tr "\n" " "`'
 alias -g GQ='`sb . | tail -n +2 | egrep "^\s?\?" | cut -c 4- | tr "\n" " "`'
 ```
+
+</Details>
+
+---
 
 ## Tools
 

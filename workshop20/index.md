@@ -1,8 +1,8 @@
 # Command Line Tools
 
-## Package Manager
+## [Package Manager](package_manager/pagacke_manager.md)
 
-![homebrew-screenshot](brew.jpg)
+![homebrew-screenshot](package_manager/brew.jpg)
 
 ## Terminal Emulator
 

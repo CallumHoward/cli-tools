@@ -21,6 +21,7 @@ Homebrew is a package manager for macOS and Linux.
 - Homebrew builds packages but handles all the configuration and build process using _formulas_, so you can just use `brew install <package>`.
 - The advantage of this is your packages are all sandboxed, installed seperately from your system packages so you can install and remove packages without any concerns that it might effect system tools.
 - This also means that `sudo` or admin privelages are not necessary to install packages.
+- The downside is some packages take a long time and a lot of processing power to build (eg. `llvm` and `gcc`)
 
 ### Useful commands
 

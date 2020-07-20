@@ -1,49 +1,51 @@
 # Command Line Tools
 
-## [Package Manager](package_manager/pagacke_manager.md)
+## [Package Manager](package_manager/package_manager.md)
 
-![homebrew-screenshot](package_manager/brew.jpg)
+[![homebrew-screenshot](package_manager/brew.jpg)](package_manager/pagacke_manager.md)
 
 ## [Terminal Emulator](terminal_emulator/terminal_emulator.md)
 
-![macos-terminal-screenshot](terminal.jpg)
+[![macos-terminal-screenshot](terminal.jpg)](terminal_emulator/terminal_emulator.md)
 
 ## [Shell](shell/shell.md)
 
-![zsh-screenshot](zsh.jpg)
+[![zsh-screenshot](zsh.jpg)](shell/shell.md)
+
+## [Builtin Replacements](builtin_replacements/builtin_replacements.md)
 
 ## [Source Control](git/git.md)
 
-![git-screenshot](git/s.jpg)
+[![git-screenshot](git/s.jpg)](git/git.md)
 
 ## [Terminal Multiplexer](terminal_multiplexer/terminal_multiplexer.md)
 
-![tmux-screenshot](tmux.jpg)
+[![tmux-screenshot](tmux.jpg)](terminal_multiplexer/terminal_multiplexer.md)
 
 ## [Remote Computing](https://github.com/CallumHoward/cli-tools/blob/master/ssh_guide.md)
 
-![ssh-screenshot](ssh.jpg)
+[![ssh-screenshot](ssh.jpg)](https://github.com/CallumHoward/cli-tools/blob/master/ssh_guide.md)
 
 ## [File Browser](file_browser/file_browser.md)
 
-![ranger-screenshot](ranger.jpg)
+[![ranger-screenshot](ranger.jpg)](file_browser/file_browser.md)
 
-## [Search](search/search.md)
+## [Find and Search](search/search.md)
 
-![ripgrep-screenshot](ripgrep.jpg)
+[![ripgrep-screenshot](ripgrep.jpg)](search/search.md)
 
 ## [Text Editor](text_editor/text_editor.md)
 
-![vim-screenshot](vim.jpg)
+[![vim-screenshot](vim.jpg)](text_editor/text_editor.md)
 
 ## [REPL](repl/repl.md)
 
-![bpython-screenshot](bpython.jpg)
+[![bpython-screenshot](bpython.jpg)](repl/repl.md)
 
 ## [Debugger](debugger/debugger.md)
 
-![pdbpp-screenshot](pdbpp.jpg)
+[![pdbpp-screenshot](pdbpp.jpg)](debugger/debugger.md)
 
 ## [Browser](browser/browser.md)
 
-![browsh-screenshot](browsh.jpg)
+[![browsh-screenshot](browsh.jpg)](browser/browser.md)

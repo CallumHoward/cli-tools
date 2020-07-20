@@ -318,6 +318,12 @@ alias gmm="git merge master"
 alias pop="git stash pop -q && s"
 ```
 
+Note we can check out the last used branch with:
+
+```sh
+git checkout -
+```
+
 </Details>
 
 ---
@@ -696,7 +702,7 @@ Diff JSON blobs recursively ignoring order of keys
 | :---------- | --------------------------------------------------------------------------------------------------- |
 | Install     | [🍺](https://brew.sh/) `brew install jd`                                                            |
 | Usage       | 💲 `jd [OPTION]... FILE1 FILE2`, see [here](https://github.com/josephburnett/jd#command-line-usage) |
-| Config File | ⚙️ ` -                                                                                              |
+| Config File | ⚙️ -                                                                                                |
 | Link        | 🌏 github.com/josephburnett/jd                                                                      |
 
 Diffing JSON files can be interesting because sometimes you will be comparing two JSON blobs with only a few differences, but the ordering is different which can throw off the diffing algorithm and give a messy result:
@@ -772,7 +778,7 @@ Useful if you have a directory of repositories and you don't want to `cd` into e
 | :---------- | -------------------------------------------------------------------------- |
 | Install     | [🍺](https://brew.sh/) `brew install gitup`                                |
 | Usage       | 💲 `gitup .`, see [here](https://github.com/earwig/git-repo-updater#usage) |
-| Config File | ⚙️ ` -                                                                     |
+| Config File | ⚙️ -                                                                       |
 | Link        | 🌏 github.com/earwig/git-repo-updater                                      |
 
 </Details>
@@ -780,3 +786,49 @@ Useful if you have a directory of repositories and you don't want to `cd` into e
 ---
 
 ![gitup-screenshot](gitup.jpg)
+
+## GitHub
+
+### hub
+
+Unofficial CLI for GitHub.
+
+---
+
+<Details>
+<Summary>Details</Summary>
+
+| Key Info    |                                                                                                         |
+| :---------- | ------------------------------------------------------------------------------------------------------- |
+| Install     | [🍺](https://brew.sh/) `brew install hub`                                                               |
+| Usage       | 💲 `hub` or `git` with passthrough, see [here](https://github.com/github/hub#usage)                     |
+| Config File | ⚙️ `~/.gitconfig`and`~/bashrc`or`~/.zshrc`, see [here](https://hub.github.com/hub.1.html#configuration) |
+| Link        | 🌏 hub.github.com                                                                                       |
+
+</Details>
+
+---
+
+![hub-screenshot](hub.jpg)
+
+### GitHub CLI
+
+Official beta CLI for GitHub.
+
+---
+
+<Details>
+<Summary>Details</Summary>
+
+| Key Info    |                                                               |
+| :---------- | ------------------------------------------------------------- |
+| Install     | [🍺](https://brew.sh/) `brew install github/gh/gh`            |
+| Usage       | 💲 `gh pr list`, see [here](https://github.com/cli/cli#usage) |
+| Config File | ⚙️ -                                                          |
+| Link        | 🌏 cli.github.com                                             |
+
+</Details>
+
+---
+
+![github-cli-screenshot](gh.jpg)

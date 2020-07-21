@@ -14,6 +14,8 @@
 
 ## [Builtin Replacements](builtin_replacements/builtin_replacements.md)
 
+[![exa-screenshot](exa.jpg)](builtin_replacements/builtin_replacements.md)
+
 ## [Source Control](git/git.md)
 
 [![git-screenshot](git/s.jpg)](git/git.md)

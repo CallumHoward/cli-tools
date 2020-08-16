@@ -25,6 +25,38 @@ Readline keybindings work by default in any shell and many command line interfac
 
 See the [Readline Cheat Sheet](http://readline.kablamo.org/emacs.html).
 
+###### History substring search
+
+One particularly useful readline shortcut allows interactive search through your shell history. At the command prompt, press `ctrl-r`. You can then type to search a command by a substring. The most recently used match will appear first. You can cycle backwards through matches by pressing `ctrl-r` again, or forward using `ctrl-s`.
+
+> Note that for historical reasons, some terminal emulators map `ctrl-s` to freeze outputting to the screen. If this happens, `ctrl-q` should also be mapped to unfreeze output. This can be disabled by placing this snippet in your `~/.bashrc` or `~/.zshrc`. Further explanation can be found [here](https://unix.stackexchange.com/questions/332791/how-to-permanently-disable-ctrl-s-in-terminal).
+
+```sh
+if [[ -t 0 && $- = *i* ]]
+then
+    stty -ixon
+fi
+```
+
+You may find if you have multiple shell instances open, the history is not shared as expected. This can be fixed by putting the following in your `~/.bashrc`:
+
+```sh
+shopt -s histappend  # Append to history file
+PROMPT_COMMAND="$PROMPT_COMMAND;history -a; history -n"  # Append and reload history file each time the prompt is shown
+```
+
+Or the equivalent for `~/.zshrc`:
+
+```zsh
+HISTSIZE=5000               # How many lines of history to keep in memory
+HISTFILE=~/.zsh_history     # Where to save history to disk
+SAVEHIST=5000               # Number of history entries to save to disk
+#HISTDUP=erase               # Erase duplicates in the history file
+setopt    appendhistory     # Append history to the history file (no overwriting)
+setopt    sharehistory      # Share history across terminals
+setopt    incappendhistory  # Immediately append to the history file, not just when a term is killed
+```
+
 ##### Vi keybindings
 
 Shells also have built-in Vi keybindings, very similair to Vim. To set the shell to use these bindings, add this to your `~/.bashrc`.
@@ -39,7 +71,7 @@ By default, Esc will put you into Vi Normal mode. Use `i` to enter back into Ins
 
 To extend this further, see [Zsh Vi Keybindings](#vi-keybindings-2)
 
-##### Other
+#### Other
 
 ##### Alias a command
 

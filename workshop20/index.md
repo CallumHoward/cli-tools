@@ -32,9 +32,9 @@
 
 [![ranger-screenshot](file_browser/ranger.jpg)](file_browser/file_browser.md)
 
-## [Find and Search](search/search.md)
+## [Search](search/search.md)
 
-[![ripgrep-screenshot](ripgrep.jpg)](search/search.md)
+[![ripgrep-screenshot](search/ripgrep.jpg)](search/search.md)
 
 ## [Text Editor](text_editor/text_editor.md)
 

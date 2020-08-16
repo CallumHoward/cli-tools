@@ -30,7 +30,7 @@
 
 ## [File Browser](file_browser/file_browser.md)
 
-[![ranger-screenshot](ranger.jpg)](file_browser/file_browser.md)
+[![ranger-screenshot](file_browser/ranger.jpg)](file_browser/file_browser.md)
 
 ## [Find and Search](search/search.md)
 

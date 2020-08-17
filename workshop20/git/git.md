@@ -342,9 +342,9 @@ For Zsh I also have some shell functions for Git operations. I have made these f
 # Add files with: `a <path1> <path2> <path3>...`
 function git_add() {
     if [ "$#" -eq 0 ]; then
-        git add .
+        git add -v .
     else
-        git add "$@"
+        git add -v "$@"
     fi
 
     if (( `git status -s | wc -l` < $LINES )); then

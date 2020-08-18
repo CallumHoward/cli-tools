@@ -22,7 +22,7 @@
 
 ## [Terminal Multiplexer](terminal_multiplexer/terminal_multiplexer.md)
 
-[![tmux-screenshot](tmux.jpg)](terminal_multiplexer/terminal_multiplexer.md)
+[![tmux-screenshot](terminal_multiplexer/tmux.jpg)](terminal_multiplexer/terminal_multiplexer.md)
 
 ## [Remote Computing](https://github.com/CallumHoward/cli-tools/blob/master/ssh_guide.md)
 

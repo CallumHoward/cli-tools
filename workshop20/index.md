@@ -50,4 +50,4 @@
 
 ## [Browser](browser/browser.md)
 
-[![browsh-screenshot](broswer/browsh.jpg)](browser/browser.md)
+[![browsh-screenshot](browser/browsh.jpg)](browser/browser.md)

@@ -2,7 +2,7 @@
 
 ## [Package Manager](package_manager/package_manager.md)
 
-[![homebrew-screenshot](package_manager/brew.jpg)](package_manager/pagacke_manager.md)
+[![homebrew-screenshot](package_manager/brew.jpg)](package_manager/package_manager.md)
 
 ## [Terminal Emulator](terminal_emulator/terminal_emulator.md)
 

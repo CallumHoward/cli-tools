@@ -67,15 +67,17 @@ Terminal emulators have varying support for wide unicode and emoji. In some case
 Further reading:
 [Vim screencast #83: Emoji](https://www.youtube.com/watch?v=F91VWOelFNE)
 
-### Meta key
+#### Meta key
 
 The meta key is the `alt` or `option` key, and it is desirable to have your terminal emulator interpret it as the meta key rather than OS specific functionality so that you can make use of shortcuts with the meta key modifier.
 
-### Mouse reporting
+#### Mouse reporting
 
 Even if you are aiming to use the keyboard as much as possible, the mouse can still be useful for scrolling or resizing panes in Tmux and splits in Vim.
 
 #### Image support
+
+![neofetch-sixel](https://raw.githubusercontent.com/saitoha/libsixel/data/data/neofetch.png)
 
 Some terminals support the display of images embedded inline in the terminal with tools like [w3m](https://github.com/CallumHoward/cli-tools/blob/master/workshop20/file_browser/file_browser.md#w3m) and [Sixel](https://saitoha.github.io/libsixel/). This can be used to give image previews in [Ranger](https://github.com/CallumHoward/cli-tools/blob/master/workshop20/file_browser/file_browser.md#ranger) or other terminal file browsers, or display images in terminal [web browsers](https://github.com/CallumHoward/cli-tools/blob/master/workshop20/browser/browser.md) (ie. [w3m](https://github.com/CallumHoward/cli-tools/blob/master/workshop20/browser/browser.md)).
 

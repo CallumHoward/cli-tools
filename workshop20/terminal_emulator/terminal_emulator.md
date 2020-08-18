@@ -98,13 +98,13 @@ Some terminals like iTerm2 support attaching URLs to label text so the URL text 
 
 ## Universal Terminal Emulators
 
-### Kitty
+### [Kitty](https://sw.kovidgoyal.net/kitty/)
 
 Fast and featureful terminal emulator with GPU acceleration with window splits and tabs.
 
 ![kitty-screenshot](https://sw.kovidgoyal.net/kitty/_images/screenshot.png)
 
-### Alacritty
+### [Alacritty](https://github.com/alacritty/alacritty)
 
 - GPU accelerated
 - Written in Rust
@@ -112,32 +112,36 @@ Fast and featureful terminal emulator with GPU acceleration with window splits a
 
 ![alacritty-screenshot](https://cloud.githubusercontent.com/assets/4285147/21585004/2ebd0288-d06c-11e6-95d3-4a2889dbbd6f.png)
 
-### Hyper
+### [Hyper](https://hyper.is/)
 
 - Electron JavaScript based terminal emulator
 
 ![hyper-screenshot](https://raw.githubusercontent.com/vercel/hyper-site/main/public/store/verminal.png)
 
-### VSCode
+### [VSCode Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 
-- Bundles Hyper.js
+- Bundles [xterm.js](https://github.com/xtermjs/xterm.js) (same as Hyper)
 - Integrates well with editor
 
-### Cool Retro Term
+### [Cool Retro Term](https://github.com/Swordfish90/cool-retro-term)
 
 - Fun retro CRT post processing graphics effects
 
+![cool-retro-term-screenshot](https://camo.githubusercontent.com/9c8a2391726693587eaa3551e0d181464781ab9d/68747470733a2f2f692e696d6775722e636f6d2f68666a574f4d342e706e67)
+
 ## Linux Terminal Emulators
 
-### Gnome-terminal
+### [Gnome-terminal](https://help.gnome.org/users/gnome-terminal/stable/)
 
 ![gnome-terminal-screenshot](https://upload.wikimedia.org/wikipedia/commons/c/c5/GNOME_Terminal_3.32_screenshot.png)
 
-### xterm
+### [xterm](https://invisible-island.net/xterm/)
 
 ![xterm-screenshot](https://upload.wikimedia.org/wikipedia/commons/d/d2/XtermMenus.png)
 
 ### urxvt
+
+- Unicode version of [rxvt](http://rxvt.sourceforge.net/), a lightweight replacement for xterm.
 
 ![urxvt](https://opensource.com/sites/default/files/uploads/rxvt-mod.png)
 
@@ -145,6 +149,7 @@ Fast and featureful terminal emulator with GPU acceleration with window splits a
 
 ### Terminal.app
 
+- Comes installed on macOS
 - Non-standard 256 colors tweaked by Apple designers
 
 #### [Proxy Title Icon](https://github.com/CallumHoward/zsh-proxy-title)
@@ -153,7 +158,7 @@ Plugin for Zsh to update the macOS Terminal window icon and URL path with the cu
 
 [![proxy-title-screenshot](https://github.com/CallumHoward/zsh-proxy-title/blob/master/zsh-proxy-title-screenshot.jpg?raw=true)](https://github.com/CallumHoward/zsh-proxy-title)
 
-### iTerm2
+### [iTerm2](https://www.iterm2.com/)
 
 Popular alternative to macOS Terminal.
 
@@ -162,7 +167,7 @@ Popular alternative to macOS Terminal.
 
 ![iterm2-screenshot](iterm2.jpg)
 
-### Upterm
+### [Upterm](https://github.com/railsware/upterm)
 
 (Deprecated) Forward thinking terminal emulator built on Electron.
 

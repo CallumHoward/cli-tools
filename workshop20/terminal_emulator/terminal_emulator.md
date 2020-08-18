@@ -44,11 +44,11 @@ The first 16 colors of the 256 color system are most often customizable. The ter
 
   ![base16-screenshot](https://camo.githubusercontent.com/cb6368fc2b962d1e3f43e9b7dcf3dc2ed64e6efe/68747470733a2f2f7261772e6769746875622e636f6d2f63687269736b656d70736f6e2f6261736531362d76696d2f6d61737465722f6261736531362d76696d2e706e67)
 
-Or completely different colors can be set from 8-16 such as in these themes:
-
 - [Iceberg](https://github.com/cocopon/iceberg.vim/#terminal-emulators)
 
   ![iceberg-screenshot](https://cocopon.github.io/iceberg.vim/assets/img/macos-terminal.png)
+
+Or completely different colors can be set from 8-15 (usually the bright variants of 0-7) such as in these themes:
 
 - [Gotham](https://github.com/whatyouhide/gotham-contrib)
 

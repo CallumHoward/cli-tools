@@ -10,7 +10,9 @@ Advantages over Tmux:
 ## Tmux
 
 - Successor to Screen
-- A more popular Terminal Multiplexer
+- A more widely used Terminal Multiplexer
+
+![tmux-screenshot](tmux.jpg)
 
 ### Prefix
 
@@ -22,11 +24,20 @@ set -g prefix C-a
 bind C-a send-prefix
 ```
 
+### Copy mode
+
+Tmux manages terminal scrollback rather than your terminal emulator. This also means you want to enable mouse reporting in your terminal emulator if it is not set, and [enable the mouse](copy-paste-configuration) in Tmux config.
+In copy mode you can scroll back the histoy of each _pane_ (split) of each _window_ (tab).
+
 ### Terminology
 
 - Panes - Splits allowing multiple shells to be visible in one _window_
 - Windows - Tabs that can contain multiple _panes_
 - Session - A collection of _windows_ that will persist while the _session_ is active
+
+### Cheat sheet
+
+- [Cheat Sheet](https://cheatography.com/cloudranger/cheat-sheets/ultimate-tmux-v2-3/)
 
 ### [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
